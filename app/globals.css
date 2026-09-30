@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: #07080c;
+  color: #e8eaef;
+  min-height: 100%;
+}
+
+body {
+  background-image:
+    radial-gradient(1200px 500px at 10% -10%, rgba(244, 193, 74, 0.12), transparent 55%),
+    radial-gradient(900px 420px at 90% 0%, rgba(62, 224, 178, 0.1), transparent 50%),
+    linear-gradient(180deg, #07080c 0%, #0b0d13 100%);
+}
+
+::selection {
+  background: rgba(244, 193, 74, 0.35);
+  color: #fff;
+}
+
+.panel {
+  @apply rounded-2xl border border-white/10 bg-ink-800/80 backdrop-blur-sm;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl px-3.5 py-2 text-sm font-medium transition disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.btn-amber {
+  @apply btn bg-reactor-amber text-ink-950 hover:bg-amber-300;
+}
+
+.btn-mint {
+  @apply btn bg-reactor-mint text-ink-950 hover:bg-emerald-300;
+}
+
+.btn-ghost {
+  @apply btn border border-white/10 bg-white/5 text-zinc-100 hover:bg-white/10;
+}
+
+.field {
+  @apply w-full rounded-xl border border-white/10 bg-ink-950/70 px-3 py-2 text-sm text-zinc-100 placeholder:text-zinc-500 outline-none focus:border-reactor-amber/60;
+}
+
+.tab {
+  @apply rounded-xl px-3 py-2 text-sm text-zinc-400 transition hover:text-zinc-100;
+}
+
+.tab-active {
+  @apply tab bg-white/10 text-white;
+}

@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "rankreactor": {
+      "url": "https://www.rankreactor.ai/mcp",
+      "headers": {
+        "Authorization": "Bearer ${RANKREACTOR_API_KEY}"
+      }
+    }
+  }
+}

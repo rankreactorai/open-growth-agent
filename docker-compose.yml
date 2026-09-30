@@ -1,0 +1,10 @@
+services:
+  open-growth-agent:
+    build: .
+    ports:
+      - "${PORT:-3000}:3000"
+    environment:
+      RANKREACTOR_API_KEY: ${RANKREACTOR_API_KEY:-}
+      RANKREACTOR_MCP_URL: ${RANKREACTOR_MCP_URL:-https://www.rankreactor.ai/mcp}
+      PORT: "3000"
+    restart: unless-stopped

@@ -1,0 +1,15 @@
+node_modules
+.next
+.git
+.gitignore
+.env
+.env.local
+*.md
+!README.md
+.cursor
+playbooks
+skills
+docs
+mcp
+LICENSE
+CONTRIBUTING.md
