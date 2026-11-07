@@ -102,13 +102,13 @@ Schedule with crontab, Cursor schedules, or agent cron. Commands: `npm run overn
 
 See [docs/AUTOMATION.md](./docs/AUTOMATION.md)
 
-## Live MCP tools (do not invent more)
+## Live MCP tools 
 
 `list_projects` · `get_reactor_status` · `get_metrics` · `refresh_metrics` · `list_articles` · `generate_article` · `list_ugc_videos` · `generate_ugc_video`
 
 ## Out of scope
 
-Semrush/OpenSEO parity · a second RankReactor dashboard · a new API-key product · backlinks · AI visibility · RankReactor in the display name
+Semrush/OpenSEO parity
 
 ## License
 
